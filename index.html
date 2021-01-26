@@ -4,163 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@400;500;600&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <title>DESK Plus</title>
 </head>
 
 <body>
-    <!--main container-->
     <div class="wraper">
-        <aside class="sidebar">
-            <img class="my-photo" src="project/photo.jpg" alt="My photo">
-            <!--contacts container-->
-            <div class="contacts-container">
-                <h3 class="contacts-title">Contacts</h3>
-                <div>
-                    <span class="contacts-link-type">C:</span><a class="contacts-link"
-                        href="tel:+380680294770">+380680294770</a>
+        <div class="title__page">
+            <div class="container">
+                <header class="header">
+                    <div class="header__logo">
+                        <img src="images/Logo.png" class="logo__img">
+                    </div>
+                    <div class="header__nav">
+                        <a href="#" class="nav__showroom">Showroom</a>
+                        <a href="#" class="nav__product">Product</a>
+                        <a href="#" class="nav__contact">Contact</a>
+                    </div>
+                </header>
+                <div class="title">
+                    <h1 class="title__text">Good Living<br>Better LIVE</h1>
+                    <p class="subtitle__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam aliquam diam
+                        dictum mattis. </p>
+                    <div class="title__search">
+                        <input class="title__input" type="search" value="Enter product name">
+                        <button class="titile__btn">Search</button>
+                    </div>
                 </div>
-                <div>
-                    <span class="contacts-link-type">E:</span> <a class="contacts-link"
-                        href="mailto:slavikhritsaychuk@gmail.com">slavikhritsaychuk@gmail.com</a>
-                </div>
-            </div>
-            <!--Tech Skills-->
-            <div class="tech-skills-container">
-                <h3 class="tech-skills-title">Tech Skills</h3>
-                <ul>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">HTML</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">CSS3</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">GIT</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">WebPack</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">JavaScript</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">React.js</span>
-                    </li>
-                    <li class="tech-skills-item">
-                        <span class="tech-skills-text">Node.js</span>
-                    </li>
-                </ul>
-            </div>
-            <!--Soft Skills-->
-            <div class="soft-skills-container">
-                <h3 class="soft-skills-title">Soft Skills</h3>
-                <ul>
-                    <li class="soft-skills-item">
-                        <span class="soft-skills-text">Scrum</span>
-                    </li>
-                    <li class="soft-skills-item">
-                        <span class="soft-skills-text">Agile</span>
-                    </li>
-                    <li class="soft-skills-item">
-                        <span class="soft-skills-text">GTD</span>
-                    </li>
-                    <li class="soft-skills-item">
-                        <span class="soft-skills-text">Teamwork</span>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        <!--about me container-->
-        <div class="about-me-container">
-            <div class="info-container">
-                <h2 class="profession">Front-End Developer</h2>
-                <h1 class="name">Yaroslav Hrytsaichuk</h1>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan
-                    lacus vel facilisis. </p>
-            </div>
-            <!--projects container-->
-            <div class="projects-container">
-                <h3 class="about-me-title">Projects</h3>
-                <ol>
-                    <li class="projects-item">
-                        <a class="projects-link" href=" https://lovecamp.goit.ua/ ">
-                            https://lovecamp.goit.ua/
-                        </a>
-                        <span class="points">................</span>
-                        <span><b>[</b><span class="projects-name">HTML5, CSS3</span><b>]</b></span>
-                    </li>
-                    <li class="projects-item">
-                        <a class="projects-link" href="https://cryptohub.goit.ua/">
-                            https://cryptohub.goit.ua/
-                        </a>
-                        <span class="points">...............</span>
-                        <span><b>[</b><span class="projects-name">JavaScript </span><b>]</b></span>
-                    </li>
-                    <li class="projects-item">
-                        <a class="projects-link" href="https://kidslike.goit.co.ua/">
-                            https://kidslike.goit.co.ua/
-                        </a>
-                        <span class="points">...............</span>
-                        <span><b>[</b><span class="projects-name">React.js, Node.js</span> <b>]</b></span>
-                    </li>
-                </ol>
-            </div>
-            <!--work experience-->
-            <div>
-                <h3 class="about-me-title">Work Experience</h3>
-                <!--company 1-->
-                <div>
-                    <h4 class="profession-title">Front-End Developer <span class="orange">Freelance</span> </h4>
-                    <span class="profession-time">September 2019 - up to now | Ukraine</span>
-                    <ul class="profession-duties">
-                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </li>
-                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li class="profession-duties-item">Risus commodo viverra maecenas. </li>
-                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod. </li>
-                    </ul>
-                </div>
-                <!--company 2-->
-                <div>
-                    <h4 class="profession-title">Manager<span class="orange"> Roga & Kopyta New </span></h4>
-                    <span class="profession-time">March 2015 - October 2018 | Ukraine</span>
-                    <ul class="profession-duties">
-                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do eiusmod labore et dolore
-                            magna
-                            aliqua. </li>
-                        <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
-                        <li class="profession-duties-item">Risus commodo viverra maecenas. </li>
-                    </ul>
-                </div>
-                <!--company 3-->
-                <div>
-                    <h4 class="profession-title">Manager <span class="orange"> Roga & Kopyta LLC</span> </h4>
-                    <span class="profession-time">June 2014 - February 2015 | Ukraine</span>
-                    <ul class="profession-duties">
-                        <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </li>
-                        <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
-                        <li class="profession-duties-item">Risus commodo viverra maecenas. </li>
-                    </ul>
-                </div>
-            </div>
-            <!--Education-->
-            <div>
-                <h3 class="about-me-title">Education</h3>
-                <h4 class="profession-title orange">Kharkiv National University of Radioelectronics</h4>
-                <h5 class="profession-subtitle ">Management</h5>
-                <span class="profession-time">Septermber 2009 - June 2014 | Ukraine</span>
             </div>
         </div>
+        <!--Title page-->
+        <div class="content">
+            <div class="container">
+                <h3 class="kits__title">Our Fave Kits</h3>
+                <div class="kits__items">
+                    <img class="kits__points" src="images/Dot Design.png">
+
+                    <div class="kits__item">
+                        <img src="images/Rectangle 12.png" class="kits__img">
+                        <a href="#" class="kits__sale">SALE</a>
+                        <div class="kits__style">
+                            <h4 class="kits__name">White Swan Chair</h4>
+                            <span class="kits__price">$69.99</span>
+                        </div>
+                    </div>
+
+                    <div class="kits__item">
+                        <img src="images/Rectangle 13.png" class="kits__img">
+                        <a href="#" class="kits__sale">SALE</a>
+                        <div class="kits__style">
+                            <h4 class="kits__name">Urban sofa set</h4>
+                            <span class="kits__price">$569</span>
+                        </div>
+                    </div>
+
+                    <div class="kits__item">
+                        <img src="images/Rectangle 14.png" class="kits__img">
+                        <a href="#" class="kits__sale">SALE</a>
+                        <div class="kits__style">
+                            <h4 class="kits__name">Big Mono • Kitchen set</h4>
+                            <span class="kits__price">$569</span>
+                        </div>
+                    </div>
+                </div>
+                <!--KITS-->
+                <div class="furniture">
+                    <div class="furniture__content">
+                        <h3 class="furniture__subtitle">Simple & Modern</h3>
+                        <h2 class="furniture__title">Furniture</h2>
+                        <p class="furniture__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
+                            semper
+                            porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta
+                            dui.
+                        </p>
+                        <a href="" class="furniture__btn btn">ORder now</a>
+                    </div>
+                    <div class="furniture__item">
+                        <img src="images/item1.png" class="furniture__img1">
+                        <img src="images/item2.png" class="furniture__img2">
+                    </div>
+                    <img class="furniture__points" src="images/Dot Design.png">
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <img src="images/Video section.png" class="video__img">
+        </div>
+        <div class="benefits">
+            <div class="container">
+                <div class="benefits__content">
+                    <h3 class="benefits__subtitle">Simple & Modern</h3>
+                    <h2 class="benefits__title">Benefits You Get When<br>Using Our Services</h2>
+                </div>
+                <div class="benefits__items">
+
+                    <div class="benefits__item">
+                        <img src="images/warranty 1.png" class="benefits__img">
+                        <div class="benefits__text">
+                            <h3 class="benefits__item_title">Best Quality</h3>
+                            <p class="benefits__item_text">All of our funiture uses the best materials and choices for
+                                our customers.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <img src="images/delivery 1.png" class="benefits__img">
+                        <div class="benefits__text">
+                            <h3 class="benefits__item_title">Free Shipping</h3>
+                            <p class="benefits__item_text">All of our funiture uses the best materials and choices for
+                                our customers.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits__item">
+                        <img src="images/guarantee 1.png" class="benefits__img">
+                        <div class="benefits__text">
+                            <h3 class="benefits__item_title">Warranty</h3>
+                            <p class="benefits__item_text">All of our funiture uses the best materials and choices for
+                                our customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--benefits-->
+        <div class="container">
+            <div class="luxroom">
+                <div class="desk">
+                    <img class="main__img" src="images/desk/Rectangle 43.png">
+                    <img class="blue__img" src="images/desk/Rectangle 53.png">
+                    <img class="sale__img" src="images/desk/30OFF.png">
+                    <img class="top__img" src="images/desk/Group 52.png">
+                    <img class="bottom__img" src="images/desk/Group 53.png">
+                    <img class="desk__img" src="images/desk/Vector.png">
+                    <img class="ellips__img" src="images/desk/Ellipse 20.png">
+                    <img class="desk__point" src="images/Dot Design.png">
+                </div>
+                <div class="luxroom__content">
+                    <h3 class="furniture__subtitle">Simple & Modern</h3>
+                    <h2 class="furniture__title">Furniture</h2>
+                    <p class="furniture__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
+                        semper
+                        porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta
+                        dui.
+                    </p>
+                    <a href="" class="furniture__btn btn">ORder now</a>
+                </div>
+            </div>
+        </div>
+        <!--luxroom-->
+        <div class="container">
+            <div class="support">
+                <h2 class="support__title">Support Your Workspace</h2>
+                <p class="support__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium<br> semper
+                    porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Pretium semper porta dui.
+                </p>
+                <div class="support__search">
+                    <input class="support__inp" type="text" placeholder="Enter your email Address">
+                    <button class="support__btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!--support-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items">
+
+                    <div class="footer__item">
+                        <h3 class="item__title">PRODUCTS</h3>
+                        <a href="" class="item__link">Red Wine</a>
+                        <a href="" class="item__link">White Wine</a>
+                        <a href="" class="item__link">Others</a>
+                    </div>
+
+                    <div class="footer__item">
+                        <h3 class="item__title">ABOUT US</h3>
+                        <a href="" class="item__link">Our Story</a>
+                        <a href="" class="item__link">Materials</a>
+                        <a href="" class="item__link">Contact</a>
+                        <a href="" class="item__link">As seen on</a>
+                    </div>
+
+                    <div class="footer__item">
+                        <h3 class="item__title">SUPPORT</h3>
+                        <a href="" class="item__link">Terms of service</a>
+                        <a href="" class="item__link">Privacy Policy</a>
+                        <a href="" class="item__link">Shipping & Returns</a>
+                    </div>
+
+                    <div class="footer__item">
+                        <h3 class="item__title">NEED HELP</h3>
+                        <a href="" class="item__link">We’re available by phone 123-456-789
+                            Monday till Friday 10 to 6 EST</a>
+                        <img class="icon__img" src="images/icon.png">
+                    </div>
+                </div>
+                <div class="footer__img">
+                    <img src="images/footer/apple.png" alt="">
+                    <img src="images/footer/google_pay.png" alt="">
+                    <img src="images/footer/Group.png" alt="">
+                    <img src="images/footer/maestro.png" alt="">
+                    <img src="images/footer/master.png" alt="">
+                    <img src="images/footer/visa.png" alt="">
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
